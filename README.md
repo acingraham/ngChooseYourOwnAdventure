@@ -14,9 +14,7 @@ A choose your own adventure game used to teach AngularJS
 
 ## Level 2 - First level
 
-## Level 3 - Breaking up the project into separate files
-
-## Level 4 - Routing
+## Level 3 - Routing
 1. Many ways to add routing to an AngularJS project
 2. We're going to stick with the standard Angular routing approach
 3. Including angular-route.js
@@ -25,6 +23,11 @@ A choose your own adventure game used to teach AngularJS
 6. Variable paths in route (e.g. /user/:id)
 7. Default route
 8. Switching from using template to templateUrl and controller
+
+## Level 4 - Creating some actual levels and linking them together
+
+## Level 4 - Breaking up the project into separate files
+1. Installing live-server globally.  Maybe include python simple server as well.
 
 ## Level X - Building a backpack component
 

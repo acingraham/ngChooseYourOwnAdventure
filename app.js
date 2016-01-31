@@ -4,32 +4,12 @@ angular.module('App', [
 .config(function($routeProvider) {
     $routeProvider
         .when('/', {
-            template: '<div>Every story has a beginning...</div>'
+            templateUrl: 'start.tpl.html'
         })
         .when('/end', {
-            template: '<div>...and an end</div>'
+            templateUrl: 'end.tpl.html'
         })
         .otherwise({
-            template: '<div>...and those adventurous few who stray off the beaten path...</div>'
+            templateUrl: '404.tpl.html'
         })
 });
-
-
-/*
-.controller('StartPageCtrl', function($scope) {
-    $scope.playerName = '';
-    $scope.message = 'Please enter your name, adventurer!';
-
-    $scope.setPlayerName = function() {
-
-    };
-});
-
-    <div ng-controller="StartPageCtrl">
-        <h1>Choose your own adventure</h1>
-
-        <h2 ng-model="message"></h2>
-
-        <input ng-model="playerName" placeholder="Your name"> <button ng-click="setPlayerName">Submit</button>
-    </div>
-*/
