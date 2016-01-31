@@ -6,6 +6,7 @@ A choose your own adventure game used to teach AngularJS
 1. Adding Angular to project
 2. Telling Angular which parts of the page it should manage
 3. Display some basic binding
+4. Explain how $scope determines execution context
 
 ## Level 2 - Intro to what we're going to build
 1. Demo project
@@ -31,3 +32,8 @@ A choose your own adventure game used to teach AngularJS
 
 ## Level X - Building a backpack component
 
+# Bonuses
+1. Making it so the adventurer's name is always displayed up top
+2. Add a reset button
+3. Style the page
+4. Add levels
