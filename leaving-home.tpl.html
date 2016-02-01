@@ -1,4 +1,16 @@
-<div ng-controller="LeavingHomeCtrl">
-    <h3>You're about to leave town</h3>
-    <button ng-click="continue()">Follow the river</button>
+<div ng-controller="LeavingHomeCtrl" style="background-image: url('http://images6.fanpop.com/image/photos/35300000/the-shire-the-hobbit-an-unexpected-journey-35354928-1920-1080.jpg'); height: 100%; position:relative;">
+    <h2 class="text-center">You're about to leave the town, but on your way out you bump into that crush of yours...</h2>
+    <h3 class="text-center"><em>Point out your crush from the townsfolk below</em></h3>
+
+    <div class="col-lg-8 col-lg-offset-2 crush-group" style="margin-top: 10px;">
+        <img ng-repeat="crush in crushes | filter: { gender: 'F' }" ng-click="pickCrush(crush.name)" ng-mouseenter="hoverName(crush.name)" ng-src="{{crush.img}}" class="crush">
+    </div>
+
+    <div class="col-lg-8 col-lg-offset-2 crush-group" style="margin-top: 10px;">
+        <img ng-repeat="crush in crushes | filter: { gender: 'M' }" ng-click="pickCrush(crush.name)" ng-mouseenter="hoverName(crush.name)" ng-src="{{crush.img}}" class="crush">
+    </div>
+
+    <div class="col-lg-8 col-lg-offset-2 crush-group" style="margin-top: 10px;">
+        <h3 class="text-center">{{ crushName }}</h3>
+    </div>
 </div>

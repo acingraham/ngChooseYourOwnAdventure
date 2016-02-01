@@ -1,4 +1,11 @@
-<div ng-controller="RiverCtrl">
-    <h3>You're by the river</h3>
-    <button ng-click="continue()">Continue</button>
+<div ng-controller="RiverCtrl" style="background-image: url('https://i.ytimg.com/vi/a1RvYNkBrcw/maxresdefault.jpg'); height: 100%; background-size:100%;">
+    <h2 class="col-lg-8 col-lg-offset-2 text-center" style="background-color: rgba(255,255,255,0.75); border-radius: 8px;">You encounter a troll that poses the riddle 'What grows when it eats, but dies when it drinks?'  What is your answer?</h2>
+
+    <div class="col-lg-4 col-lg-offset-4">
+        <input ng-model="answer" type="text" class="form-control" placeholder="Your answer">
+    </div>
+
+    <div class="col-lg-4 col-lg-offset-4 text-center" style="margin-top: 10px;">
+        <button ng-click="submitAnswer(answer)" class="btn btn-default">Answer</button>
+    </div>
 </div>

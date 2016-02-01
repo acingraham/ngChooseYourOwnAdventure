@@ -1,12 +1,27 @@
 <!DOCTYPE html>
-<html ng-app="App">
+<html ng-app="App" style="height: 100%; position: relative;">
 <head>
+    <style>
+        .crush {
+            cursor: pointer;
+            height: 200px;
+        }
+        .crush-group {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="angular.js"></script>
     <script src="angular-route.js"></script>
     <script src="app.js"></script>
 </head>
-<body>
-    <h1>Choose Your Own Adventure</h1>
-    <div ng-view></div>
+<body style="height: 100%; position: relative;" ng-controller="AppCtrl">
+    <header>
+        <h1 class="text-center">{{ playerInfo.name | gameHeading }}</h1>
+    </header>
+    <div ng-view style="height: 100%;"></div>
 </body>
 </html>

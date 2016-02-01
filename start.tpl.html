@@ -1,4 +1,13 @@
-<div ng-controller="StartPageCtrl">
-<h2>Please enter your name, adventurer!</h2>
-    <input ng-model="playerName" placeholder="Your name"> <button ng-click="startAdventure()">Submit</button>
+<div ng-controller="StartPageCtrl" style="background-image: url('https://4.bp.blogspot.com/-oVSLqMxMc3w/VDg5an04TDI/AAAAAAABQzo/ev8ilOa6Mj4/s0/Landscape%2BAdventure%2Bin%2Bnature_HD.jpg'); height: 100%;">
+    <h2 class="text-center">{{ data.message }}</h2>
+
+    <div ng-if="!data.nameSelected" class="col-lg-4 col-lg-offset-4">
+      <input ng-model="data.playerName" type="text" class="form-control" placeholder="Your name">
+    </div>
+
+    <div class="col-lg-4 col-lg-offset-4 text-center" style="margin-top: 10px;">
+        <button ng-if="data.playerName && !data.nameSelected" ng-click="selectName()" class="btn btn-default">Select Name</button>
+        <button ng-if="data.nameSelected" ng-click="startAdventure()" class="btn btn-default">Start Adventure!</button>
+    </div>
+
 </div>

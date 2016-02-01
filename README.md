@@ -37,3 +37,31 @@ A choose your own adventure game used to teach AngularJS
 2. Add a reset button
 3. Style the page
 4. Add levels
+
+# Notes
+- Make sure to cover nested controllers and scopes
+- Could have selecting a crush be a directive
+- May want to cover some of the angular convenience functions like angular.extend
+- Could change crush picker to companion picker
+- Could have the companion picker be a series of questions that results in you getting a specific companion
+- Must cover ng-bind and {{}}
+- ngRepeat
+- ngFocus or ngBlur for input
+- ngDisable for button
+- ngClass
+- ngShow
+- Consider creating cheat sheet that covers all the stuff we've covered
+- constants and values
+- Turn input into custom directive
+- May want to discuss track by used with ngRepeat
+
+- Add dragon battle
+- Add success ending
+- Add death ending
+- Incorporate custom directive (maybe tic-tac-toe)
+- Make remote dependencies to local (images, bootstrap, jQuery)
+- Improve header
+- Fix sizing of image
+- Remove input elements more cleanly for pages with inputs that disappear
+- Improve messaging for success and failure on Troll level.  Must get rid of alerts
+- Use only a single ng-repeat for crushes
